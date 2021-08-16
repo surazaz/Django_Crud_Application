@@ -3,7 +3,6 @@ from django.shortcuts import render, redirect
 from meroshare.forms import ShareForm  
 from meroshare.models import MeroShare  
 
-
 def add(request):  
     if request.method == "POST":  
         form = ShareForm(request.POST)  
