@@ -1,6 +1,7 @@
 from django.contrib import admin  
 from django.urls import path  
 from meroshare import views  
+
 urlpatterns = [    
     path('',views.show),
     path('add', views.add), 
