@@ -1,0 +1,22 @@
+{% extends 'base.html'%} {%block body%}
+<center>
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-header">Edit Form</div>
+      <div class="card-body">
+        <form
+          method="POST"
+          class="post-form"
+          action="/update/{{meroshare.share_mnemonic}}"
+        >
+          {% csrf_token %}
+          <div class="container">
+            {{form.as_p}}
+            <button type="submit" class="btn btn-success">Update</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</center>
+{%endblock%}
